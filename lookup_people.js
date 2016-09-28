@@ -9,7 +9,7 @@ const client = new pg.Client({
   port     : settings.port,
   ssl      : settings.ssl
 });
- //WHERE first_name=$1::text AS name", [process.argv[2]]
+
 client.connect((err) => {
   if (err) {
     return console.error("Connection Error", err);
